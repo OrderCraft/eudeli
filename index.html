@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="European Delicatessen - Premium European delicacies and specialty foods.">
+    <title>European Delicatessen | Premium Specialty Foods</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <span class="logo__accent">European</span> Delicatessen
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+
+            <div class="header__menu">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active" data-ukr="Головна"
+                                data-en="Home">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link" data-ukr="Про нас"
+                                data-en="About Us">About Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="ukr">Ukr</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn active" data-lang="en">En</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title" data-ukr="European Delicatessen" data-en="European Delicatessen">
+                        European Delicatessen</h1>
+                    <p class="hero__subtitle"
+                        data-ukr="Мережа магазинів з європейськими продуктами 5 локацій по всій території США для вашої зручності"
+                        data-en="Chain of stores with European Products 5 locations across the US for your convenience">
+                        Chain of stores with European Products 5 locations across the US for your convenience</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider-section">
+            <div class="container">
+                <h2 class="section__title" data-ukr="Наші локації" data-en="Our locations">Our locations</h2>
+                <div class="location-slider">
+                    <button class="slider-nav slider-nav--prev" aria-label="Previous Slide">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-nav slider-nav--next" aria-label="Next Slide">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider__container">
+                        <div class="slider__item active">
+                            <img src="slider/sacramento.jpeg" alt="Sacramento, CA">
+                            <div class="slider__content">
+                                <div class="slider__pill">
+                                    <span class="slider__title">Sacramento, CA</span>
+                                    <button class="btn btn--more-info" data-location="sacramento">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="slider/meridian.jpeg" alt="Meridian, ID">
+                            <div class="slider__content">
+                                <div class="slider__pill">
+                                    <span class="slider__title">Meridian, ID</span>
+                                    <button class="btn btn--more-info" data-location="meridian">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="slider/tacoma.jpeg" alt="Tacoma, WA">
+                            <div class="slider__content">
+                                <div class="slider__pill">
+                                    <span class="slider__title">Tacoma, WA</span>
+                                    <button class="btn btn--more-info" data-location="tacoma">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="slider/spokane.jpeg" alt="Spokane, WA">
+                            <div class="slider__content">
+                                <div class="slider__pill">
+                                    <span class="slider__title">Spokane, WA</span>
+                                    <button class="btn btn--more-info" data-location="spokane">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="slider/vancouver.jpeg" alt="Vancouver, WA">
+                            <div class="slider__content">
+                                <div class="slider__pill">
+                                    <span class="slider__title">Vancouver, WA</span>
+                                    <button class="btn btn--more-info" data-location="vancouver">More info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="location-details" class="location-details">
+                    <button class="details-close" aria-label="Close details">&times;</button>
+                    <div class="details-grid">
+                        <div class="details-info">
+                            <h2 class="details-title" id="details-city">Sacramento, CA</h2>
+                            <div class="details-block">
+                                <h4 data-ukr="Адреса" data-en="Address">Address</h4>
+                                <p id="details-address">4319 Elkhorn Blvd, Sacramento, CA 95842</p>
+                            </div>
+                            <div class="details-block" id="phone-block">
+                                <h4 data-ukr="Телефон" data-en="Phone">Phone</h4>
+                                <p id="details-phone">+1 (916) 332-3537</p>
+                            </div>
+                            <div class="details-block">
+                                <h4 data-ukr="Години роботи" data-en="Opening Hours">Opening Hours</h4>
+                                <ul class="hours-list" id="details-hours">
+                                    <li>Mon-Sat: 9:00 AM - 10:00 PM</li>
+                                    <li>Sun: 10:00 AM - 10:00 PM</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="details-map-wrapper">
+                            <div class="details-map" id="details-map-container">
+                                <iframe id="details-iframe" src="" width="100%" height="300" style="border:0;"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="details-nav">
+                                <a href="#" id="google-maps" target="_blank" class="btn btn--nav">Google Maps</a>
+                                <a href="#" id="apple-maps" target="_blank" class="btn btn--nav">Apple Maps</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-section">
+                        <h3 class="gallery-title" data-ukr="Галерея" data-en="Gallery">Gallery</h3>
+                        <div class="gallery-grid" id="location-gallery">
+                            <!-- Gallery items will be populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Overlay -->
+        <div id="lightbox" class="lightbox">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="Gallery Image">
+                <div class="lightbox-counter" id="lightbox-counter">1 / 8</div>
+            </div>
+            <button class="lightbox-nav lightbox-next" aria-label="Next image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section__title" data-ukr="Про нас" data-en="About Us">About Us</h2>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p data-ukr="Ми продаємо найкращі європейські продукти у ваш район. Від традиційних делікатесів до готових страв від наших шеф-кухарів — кожен товар обирається за якістю, автентичністю та смаком."
+                            data-en="We sell the finest European products to your neighborhood. From traditional delicatessen items to ready-to-eat meals prepared by our chefs, every product is chosen for its quality, authenticity, and taste.">
+                            We sell the finest European products to your neighborhood. From traditional delicatessen
+                            items to ready-to-eat meals prepared by our chefs, every product is chosen for its quality,
+                            authenticity, and taste.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="taste-home section">
+            <div class="container">
+                <p class="taste-home__subtitle" data-ukr="УКРАЇНСЬКІ ТА ЄВРОПЕЙСЬКІ ПРОДУКТИ"
+                    data-en="UKRAINIAN & EUROPEAN PRODUCTS">UKRAINIAN & EUROPEAN PRODUCTS</p>
+                <h2 class="taste-home__title" data-ukr="Смак Дому" data-en="A Taste of Home">A Taste of Home</h2>
+                <p class="taste-home__text"
+                    data-ukr="Ми імпортуємо автентичні українські та європейські продукти безпосередньо з країн походження. Від класичних українських спеціалітетів до преміальних європейських делікатесів, кожен продукт ретельно відібраний, щоб відображати справжні традиції та смак. Наші європейські делікатесні магазини пропонують високоякісні інгредієнти, а наша кухня готує свіжі домашні страви щодня—виготовлені з тих самих автентичних продуктів, які ми з гордістю продаємо."
+                    data-en="We import authentic Ukrainian and European foods directly from their countries of origin. From classic Ukrainian specialties to premium European Delicatessen items, every product is carefully selected to reflect true tradition and flavor. Our European Delicatessen stores offer high-quality ingredients, and our kitchen prepares fresh, homemade meals daily—crafted using the same authentic products we proudly sell.">
+                    We import authentic Ukrainian and European foods directly from their countries of origin. From
+                    classic Ukrainian specialties to premium European Delicatessen items, every product is carefully
+                    selected to reflect true tradition and flavor. Our European Delicatessen stores offer high-quality
+                    ingredients, and our kitchen prepares fresh, homemade meals daily—crafted using the same authentic
+                    products we proudly sell.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2025 European Delicatessen. <span data-ukr="Всі права захищені."
+                    data-en="All rights reserved.">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
