@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateLightboxImage = () => {
         if (currentGallery.length === 0) return;
-        const src = `slider/more/${currentGallery[currentImageIndex]}`;
+        const src = `Slider/more/${currentGallery[currentImageIndex]}`;
         lightboxImg.src = src;
         lightboxCounter.textContent = `${currentImageIndex + 1} / ${currentGallery.length}`;
     };
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const item = document.createElement('div');
                 item.className = 'gallery-item';
                 const img = document.createElement('img');
-                img.src = `slider/more/${photo}`;
+                img.src = `Slider/more/${photo}`;
                 img.alt = `${data.city} photo ${index + 1}`;
                 img.loading = 'lazy';
 
