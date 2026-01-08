@@ -249,7 +249,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 6rem;
     background: url('left.jpg') left center / auto 100% no-repeat,
         url('right.jpg') right center / auto 100% no-repeat,
         radial-gradient(circle at center, #fafafa 0%, #ffffff 100%);
