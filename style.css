@@ -587,7 +587,9 @@ body {
 
 @media (max-width: 768px) {
     .hero {
-        background: radial-gradient(circle at center, #fafafa 0%, #ffffff 100%);
+        background: url('left.jpg') left center / auto 100% no-repeat,
+            url('right.jpg') right center / auto 100% no-repeat,
+            radial-gradient(circle at center, #fafafa 0%, #ffffff 100%);
     }
 
     .hero__title {
