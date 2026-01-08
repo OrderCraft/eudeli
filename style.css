@@ -586,6 +586,14 @@ body {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        background: radial-gradient(circle at center, #fafafa 0%, #ffffff 100%);
+    }
+
+    .hero__title {
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
+    }
+
     .slider-nav {
         width: 40px;
         height: 40px;
