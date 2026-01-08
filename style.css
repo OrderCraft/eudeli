@@ -251,8 +251,7 @@ body {
     text-align: center;
     padding-top: 11rem;
     background: url('left.jpg') left top 65px / auto calc(100% - 65px) no-repeat,
-        url('right.jpg') right top 65px / auto calc(100% - 65px) no-repeat,
-        radial-gradient(circle at center, #fafafa 0%, #ffffff 100%);
+        url('right.jpg') right top 65px / auto calc(100% - 65px) no-repeat;
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
 }
