@@ -21,6 +21,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -244,18 +245,16 @@ body {
 
 /* Hero Section */
 .hero {
-    margin-top: 65px;
-    min-height: 60vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     text-align: center;
-    padding-top: 6rem;
-    background: url('left.jpg') left center / auto 100% no-repeat,
-        url('right.jpg') right center / auto 100% no-repeat,
+    padding-top: 11rem;
+    background: url('left.jpg') left top 65px / auto calc(100% - 65px) no-repeat,
+        url('right.jpg') right top 65px / auto calc(100% - 65px) no-repeat,
         radial-gradient(circle at center, #fafafa 0%, #ffffff 100%);
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
-
 }
 
 .hero__content {
@@ -587,12 +586,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hero {
-        background: url('left.jpg') left center / auto 100% no-repeat,
-            url('right.jpg') right center / auto 100% no-repeat,
-            radial-gradient(circle at center, #fafafa 0%, #ffffff 100%);
-    }
-
     .hero__title {
         font-size: clamp(2.5rem, 10vw, 3.5rem);
     }
